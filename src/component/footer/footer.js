@@ -49,7 +49,7 @@ function Footer() {
             <p>San Francisco, CA 94105,</p>
             <p>United States</p>
             <p>Call us: + 1-(123)-456-CLASSY</p>
-            <p>Email: sales@halothemes.com</p>
+            <p>Email: phamhoc2902@gmail.com</p>
             <div className='footer__icon'>
             <FacebookFilled />
             <TwitterCircleFilled />
@@ -63,7 +63,7 @@ function Footer() {
         <div className='footer__left'>
             <hr />
             <div className='footer_last'>
-            &#169; 2022 Class Fashion. Powered by Shopify. Shopify Themes by HaloThemes.com
+            &#169; 2022 Class Fashion. Powered by PhamHoc
             
             <FaCcAmazonPay></FaCcAmazonPay>
             <FaCcDiscover></FaCcDiscover>

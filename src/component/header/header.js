@@ -26,30 +26,79 @@ function Header() {
         items={[
             {
                 label:'New Id',
-                key:'newId'
+                key:'newId',
+                onClick:()=>{
+                    window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                    });
+                }
             },
             {
                 label:'Trend',
-                key:'trend'
+                key:'trend',
+                onClick:()=>{
+                    window.scroll({
+                    top: 1200,
+                    left: 0,
+                    behavior: 'smooth'
+                    });
+                }
             },{
                 label:'Collections',
-                key:'collections'
+                key:'collections',
+                onClick:()=>{
+                    window.scroll({
+                    top: 2000,
+                    left: 0,
+                    behavior: 'smooth'
+                    });
+                }
             },{
                 label:'LookBook',
-                key:'lookbook'
+                key:'lookbook',
+                onClick:()=>{
+                    window.scroll({
+                    top: 2800,
+                    left: 0,
+                    behavior: 'smooth'
+                    });
+                }
             }
             ,{
                 label:'Child Themes',
-                key:'childTheme'
+                key:'childTheme',
+                onClick:()=>{
+                    window.scroll({
+                    top: 3600,
+                    left: 0,
+                    behavior: 'smooth'
+                    });
+                }
             }
             ,{
                 label:'Classy',
                 key:'classy',
-                className:'header__classy'
+                className:'header__classy',
+                onClick:()=>{
+                    window.scroll({
+                    top: 4000,
+                    left: 0,
+                    behavior: 'smooth'
+                    });
+                }
             }
             ,{
                 label:'Blog',
-                key:'blog'
+                key:'blog',
+                onClick:()=>{
+                    window.scroll({
+                    top: 5000,
+                    left: 0,
+                    behavior: 'smooth'
+                    });
+                }
             }
             ,{
                 label:'Pages',
