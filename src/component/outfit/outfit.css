@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.outfit{
+    font-family: 'Montserrat', sans-serif;
+    padding: 100px 200px;
+    background-color: #F7DECB;
+    margin-bottom: 100px;
+    padding: 70px 200px;
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    grid-template-rows: repeat(2,300px);
+    column-gap: 20px;
+    grid-template-areas: 
+    "aa bb"
+    "cc bb"
+    ;
+}
+.outfit .outfit__content{
+    grid-area: aa;
+    text-align: center;
+    padding: 0 80px;
+}
+.outfit .outfit__image1{
+    grid-area: cc;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.outfit .outfit__image2{
+
+    grid-area: bb;
+}
+.outfit .outfit__image2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.outfit .outfit__image1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.outfit__content button{
+    height: 30px;
+    width: 120px;
+    background-color: #D58E6E;
+    color: white;
+    border: navajowhite;
+    cursor: pointer;
+}
+@media (max-width:1250px) {
+    .outfit{
+    grid-template-columns: repeat(1,500px);
+    grid-template-rows: repeat(300px,1000px,300px);
+    grid-template-areas: 
+    "aa"
+    "cc"
+    "bb"
+    ;
+    row-gap: 10px;
+    padding: 10px 50px;
+    justify-content: center;
+
+    }
+    .outfit .outfit__image2 img{
+        height: unset !important;
+    }
+    .outfit .outfit__image2, .outfit .outfit__image1{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:600px) {
+    .outfit{
+        grid-template-columns: repeat(1,1fr);
+    /* grid-template-rows: repeat(300px,1000px,300px); */
+        padding: 10px 50px;
+        justify-content: center;
+    
+        }
+        .outfit__content{
+            padding: 0 30px !important;
+        }
+        .outfit .outfit__image2, .outfit .outfit__image1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    .outfit .outfit__image2 img{
+        width: 100% !important;
+        height: unset !important;
+       text-align: center;
+    }
+    .outfit .outfit__image1 img{
+        width: 100% !important;
+        height: unset !important;
+    }
+}

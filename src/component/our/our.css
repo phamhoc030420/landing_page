@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+h2{
+    text-align: center;
+}
+.our{
+    display: flex;
+    padding: 0px 200px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.our .our__left img{
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+}
+.our .our__right{
+    width: 100%;
+    text-align: center;
+    background-color: #F6F6F6;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 200px;
+    height: 600px;
+    overflow: hidden;
+}
+.our .our__right img{
+    object-fit: cover;
+    margin-top: 5px;
+    height: 780px;
+}
+.our__content{
+    position: relative;
+    top: -400px;
+    background-color: white;
+    height: 100%;
+}
+.saller_multi{
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+
+}
+.saller_color{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.saller__star{
+    color: #F6F6F6;
+}
+.light__star{
+    color: darkorange;
+}
+.pagination{
+    margin-top: 30px;
+}
+.our__left .our__icon{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -380px;
+    color: white;
+}
+.our__left .our__icon:hover{
+    cursor: pointer;
+}
+@media (max-width:1300px) {
+    .our .our__right{
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+}
+@media (max-width:1200px) {
+    .our{
+        padding: 0px 100px;
+    }
+}
+@media (max-width:1000px) {
+    .our{
+        display: block;
+    }
+    .our__left{
+        text-align: center;
+    }
+    .our .our__right{
+        width: 500px !important;
+        margin: 0 auto !important;
+    }
+}
+@media (max-width:600px) {
+    .our{
+        padding: 10px;
+    }
+    .our__left img{
+        width: 100% !important;
+        height: unset !important;
+    }
+    .our .our__right{
+        width: 100% !important;
+    }
+    .our__left .our__icon {
+        top: -250px;
+        justify-content: space-evenly !important;
+    }
+}
+@media (max-width:500px) {
+    .our__left .our__icon {
+        top: -150px;
+        justify-content: space-evenly !important;
+    }
+}
+@media (max-width:700px) {
+    .our__left .our__icon {
+        justify-content: space-between;
+    }
+}
