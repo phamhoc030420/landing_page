@@ -1,10 +1,16 @@
 import { FaCertificate } from 'react-icons/fa';
 import './client.css';
 import start from '../../assets/start.jpg'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 function Client() {
+    useEffect(()=>{
+        AOS.init({duration:2500})
+    },[])
     return ( <>
         <div className="client">
-        <div className="client__content">
+        <div className="client__content"  data-aos='fade-up'>
 
         <h3>What Our Client Says</h3>
         <img src={start} style={{height:'20px',width:'100px'}}/>

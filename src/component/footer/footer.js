@@ -4,7 +4,13 @@ import {FacebookFilled, InstagramFilled, LinkedinFilled, MailOutlined, TwitterCi
 import img from '../../assets/footer.jpg' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaCcAmazonPay, FaCcDiscover, FaCcMastercard, FaCcPaypal, FaCcVisa } from "react-icons/fa";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 function Footer() {
+    useEffect(()=>{
+        AOS.init({duration:2500})
+    },[])
     var  emailIcon = <MailOutlined  size={10}  />;
     return ( <>
         <div className="footer">
@@ -16,7 +22,7 @@ function Footer() {
             <p className='footer__by'><UpSquareOutlined /> By providing email, you consent to out Privacy Policy and Terms & Conditions.</p>
 
         </div>
-        <div className='footer__contact'>
+        <div className='footer__contact' data-aos='zoom-out'>
             <Row gutter={[8, 16]}>
             <Col  xs={24} sm={24} md={12} lg={8} xl={8} span={8}>Shop</Col>
             <Col  xs={24} sm={24} md={12} lg={8} xl={8} span={8}>Further Info</Col>
