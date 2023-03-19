@@ -2,7 +2,7 @@ import './outfit.css'
 import img1 from '../../assets/outfits_left.jpg'
 import img2 from '../../assets/outfit_right.jpg'
 import AOS from 'aos'
-import 'aos/dist/aos.css'
+// import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 function Outfit() {
     useEffect(()=>{

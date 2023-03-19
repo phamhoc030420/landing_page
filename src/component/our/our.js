@@ -7,7 +7,7 @@ import anh2 from '../../assets/saller_3.png'
 import './our.css';
 import { Card } from 'antd';
 import AOS from 'aos'
-import 'aos/dist/aos.css'
+// import 'aos/dist/aos.css'
 function Our() {
     const [active,setActive]=useState(false);
     const [anh,setAnh]=useState(1);

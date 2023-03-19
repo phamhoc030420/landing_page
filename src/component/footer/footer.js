@@ -5,7 +5,7 @@ import img from '../../assets/footer.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaCcAmazonPay, FaCcDiscover, FaCcMastercard, FaCcPaypal, FaCcVisa } from "react-icons/fa";
 import AOS from 'aos'
-import 'aos/dist/aos.css'
+// import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 function Footer() {
     useEffect(()=>{

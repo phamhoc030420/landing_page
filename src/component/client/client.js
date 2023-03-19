@@ -2,7 +2,7 @@ import { FaCertificate } from 'react-icons/fa';
 import './client.css';
 import start from '../../assets/start.jpg'
 import AOS from 'aos'
-import 'aos/dist/aos.css'
+// import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 function Client() {
     useEffect(()=>{
